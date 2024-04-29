@@ -24,7 +24,7 @@
             </span>
             <div class="media-body ml-2 d-none d-lg-block">
               <span class="mb-0 text-sm  font-weight-bold"
-                *ngIf="profile;else login_template">{{profile.username}}</span>
+                *ngIf="profile;xelse login_template">{{profile.username}}</span>
               <ng-template #login_template>
                 <button class="btn btn-success" (click)="handleLogin()">Login</button>
               </ng-template>
